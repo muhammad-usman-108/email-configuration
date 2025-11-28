@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "sXtor5V3TeeYC7iGMt6o9gSPb3lHE2v/RF9/ufQByWI=",
+  "Source": "EmailConfigApi",
+  "BasePath": "_content/EmailConfigApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
