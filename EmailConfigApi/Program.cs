@@ -16,12 +16,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Configure EF Core PostgreSQL using connection string from configuration or environment variable
-var connStr = builder.Configuration.GetConnectionString("DefaultConnection");
-if (string.IsNullOrWhiteSpace(connStr))
-    {
-        connStr = "Host=127.0.0.1;Port=5432;Database=emailconfigs;Username=postgres;Password=postgres";
-    }
-
+var connStr = builder.Configuration.GetConnectionString("DefaultConnection")
+             ?? "Host=postgres;Port=5432;Database=emailconfigs;Username=postgres;Password=postgres";
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connStr));

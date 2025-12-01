@@ -12,9 +12,7 @@ namespace EmailConfigApi.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-
-            // Optionally enforce enum stored as smallint or string. By default EF maps enum to int.
-            // If you prefer string storage:
+            
             builder.Entity<EmailConfiguration>()
                 .Property(e => e.Provider)
                 .HasConversion<string>()
