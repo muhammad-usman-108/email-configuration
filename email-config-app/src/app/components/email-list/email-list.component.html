@@ -1,0 +1,10 @@
+<h2>Email Configurations</h2>
+<ul>
+  <li *ngFor="let email of emails" (click)="selectEmail(email)">
+    {{ email.name }} - {{ email.provider }}
+  </li>
+</ul>
+
+<hr>
+
+<app-email-detail *ngIf="selectedEmail" [email]="selectedEmail"></app-email-detail>

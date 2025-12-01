@@ -1,0 +1,13 @@
+<h2>Add Email Configuration</h2>
+<form (ngSubmit)="addEmail()">
+  <label>Name: <input [(ngModel)]="newEmail.name" name="name"></label><br>
+  <label>Watched Folder: <input [(ngModel)]="newEmail.watchedFolder" name="watchedFolder"></label><br>
+  <label>Provider:
+    <select [(ngModel)]="newEmail.provider" name="provider">
+      <option value="Exchange">Exchange</option>
+      <option value="IMAP">IMAP</option>
+    </select>
+  </label><br>
+  <label>Store Attachments: <input type="checkbox" [(ngModel)]="newEmail.storeAttachments" name="storeAttachments"></label><br>
+  <button type="submit">Add</button>
+</form>
