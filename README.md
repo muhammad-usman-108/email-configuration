@@ -47,7 +47,7 @@ The backend is a **.NET 8 Web API** that connects to PostgreSQL.
 ## Frontend Setup
 
 1. Move to folder `email-config-app` and install dependencies:
-    `cd email-config-ui`
+    `cd email-config-app`
     `npm install`
 
 2. Run the FE application:
